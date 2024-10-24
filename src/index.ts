@@ -1,4 +1,4 @@
-import { MikroTikWireGuardClientManager } from './lib/MikroTikWireGuardClientManager';
-import { MikroTikSSHClient } from "./lib/MikrotikSSHClient";
+import {MikroTikWireGuardClientManager} from './lib/MikroTikWireGuardClientManager';
+import {MikroTikSSHClient} from "./lib/MikrotikSSHClient";
 
-export { MikroTikWireGuardClientManager, MikroTikSSHClient };
+export {MikroTikWireGuardClientManager, MikroTikSSHClient};

@@ -1,14 +1,14 @@
 export const WIREGUARD_COMMANDS = {
-    ADD_PEER: (comment: string, allowedAddress: string, key: string) =>
-        `/interface wireguard peers add comment="${comment}" allowed-address=${allowedAddress} interface=wg0 public-key="${key}"`,
-    REMOVE_PEER: (key: string) => `/interface wireguard peers remove [find public-key="${key}"]`,
-    LIST_PEERS: `/interface wireguard peers print`,
-    GET_INTERFACE_INFO: `/interface wireguard print`,
+  ADD_PEER: (comment: string, allowedAddress: string, key: string) =>
+    `/interface wireguard peers add comment="${comment}" allowed-address=${allowedAddress} interface=wg0 public-key="${key}"`,
+  REMOVE_PEER: (key: string) => `/interface wireguard peers remove [find public-key="${key}"]`,
+  LIST_PEERS: `/interface wireguard peers print`,
+  GET_INTERFACE_INFO: `/interface wireguard print`,
 };
 
 export const WIREGUARD_FIELDS = {
-    LISTEN_PORT: 'listen-port=',
-    PUBLIC_KEY: 'public-key='
+  LISTEN_PORT: 'listen-port=',
+  PUBLIC_KEY: 'public-key='
 }
 
 export const CLIENT_ADD_SUCCESS = 'VPN client added successfully';
