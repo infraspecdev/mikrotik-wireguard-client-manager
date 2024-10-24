@@ -1,0 +1,22 @@
+{
+  "name": "@nimisha.gj/mikrotik-wireguard-client-manager",
+  "version": "1.0.0",
+  "description": "A Node.js package for managing WireGuard VPN clients on MikroTik routers via SSH",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts"
+  },
+  "author": "Nimisha G J",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "ssh2": "^1.16.0"
+  }
+}
