@@ -12,7 +12,7 @@ describe('MikroTikWireGuardClientManager', () => {
 
   beforeEach(() => {
     manager = new MikroTikWireGuardClientManager(mockSSHClient);
-      jest.spyOn(manager, 'listClients'); // Ensure that listClients is mocked
+    jest.spyOn(manager, 'listClients');
   });
 
   it('should add a client successfully', async () => {
@@ -20,8 +20,8 @@ describe('MikroTikWireGuardClientManager', () => {
     const comment = 'Test Comment';
     const mockIp = '192.168.1.2/24';
 
-    // Mock the methods
     (mockSSHClient.executeCommand as jest.Mock).mockResolvedValueOnce('output with public key');
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     (manager as any).getNextAvailableIp = jest.fn().mockResolvedValue(mockIp);
     (manager as any).getWireGuardInterfaceInfo = jest.fn().mockResolvedValue({ publicKey: 'routerPublicKey', listenPort: 51820 });
 
