@@ -22,15 +22,24 @@ Create a new branch for your feature or bug fix. Use a descriptive name for your
 git checkout -b feature/your-feature-name
 ```
 
-### 3. Make Your Changes
+### 3. Install Dependencies
+```bash
+npm install
+```
+
+### 4. Make Your Changes
 
 Make the necessary changes to the codebase. Ensure your changes adhere to the project's coding standards.
 
-### 4. Test Your Changes
+### 5. Test Your Changes
 
 Test your changes thoroughly to ensure they work as expected.
+```bash
+npm run lint
+npm test
+```
 
-### 5. Commit Your Changes
+### 6. Commit Your Changes
 
 Commit your changes with a descriptive commit message.
 Make sure to Sign your commits
@@ -40,7 +49,7 @@ git add .
 git commit -m "Add feature: Description of your feature"
 ```
 
-### 6. Push Your Changes
+### 7. Push Your Changes
 
 Push your changes to your forked repository.
 
@@ -48,7 +57,7 @@ Push your changes to your forked repository.
 git push origin feature/your-feature-name
 ```
 
-### 7. Create a Pull Request
+### 8. Create a Pull Request
 
 Github has documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
