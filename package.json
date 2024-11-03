@@ -1,5 +1,5 @@
 {
-  "name": "@nimisha.gj/mikrotik-wireguard-client-manager",
+  "name": "@nimish.gj/mikrotik-wireguard-client-manager",
   "version": "1.0.0",
   "description": "A Node.js package for managing WireGuard VPN clients on MikroTik routers via SSH",
   "main": "dist/index.js",
