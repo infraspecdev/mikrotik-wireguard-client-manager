@@ -11,8 +11,7 @@ A Node.js package for managing WireGuard VPN clients on MikroTik routers via SSH
 * [License](#license)
 
 ```js
-const { MikroTikWireGuardClientManager }  = require('@nimisha.gj/mikrotik-client-manager')
-const { MikroTikSSHClient } = require("@nimisha.gj/mikrotik-client-manager");
+const { MikroTikWireGuardClientManager, MikroTikSSHClient }  = require('@infraspecdev/mikrotik-wireguard-client-manager')
 
 const sshClient = new MikroTikSSHClient("192.168.1.1", 22, "admin", "password");
 
@@ -35,7 +34,7 @@ Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
-npm install @nimish.gj/mikrotik-client-manager
+npm install @infraspecdev/mikrotik-wireguard-client-manager
 ```
 ## Features
 * Add WireGuard Client
